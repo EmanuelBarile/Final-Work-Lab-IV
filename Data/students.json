@@ -1,0 +1,15 @@
+[
+    {
+      "studentId": 1,
+      "careerId": 2,
+      "firstName": "Devlen",
+      "lastName": "Douthwaite",
+      "dni": "15-992-8607",
+      "fileNumber": "33-059-4172",
+      "gender": "Genderqueer",
+      "birthDate": "2021-06-28T00:00:00",
+      "email": "ddouthwaite0@goo.gl",
+      "phoneNumber": "849-713-4523",
+      "active": false
+    }
+]
