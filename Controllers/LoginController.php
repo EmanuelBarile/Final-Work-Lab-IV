@@ -33,9 +33,9 @@
                     $valid_user = $usuarios_registrados[$i];
             }
             if(isset($valid_user)){
-                if($valid_user->getType() == "C")
+                if($valid_user->getType() == "U")
                     $this->ShowStudentView();
-                if($valid_user->getType() == "C")
+                if($valid_user->getType() == "A")
                     $this->ShowAdminView();
             }
         }  
