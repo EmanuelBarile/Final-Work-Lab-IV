@@ -1,7 +1,5 @@
 <?php
     namespace DAO;
-    require "../DAO/IUserDAO.php";
-    require "../Config/Config.php";
 
     use DAO\IUserDAO as IUserDAO;
     use Models\User as User;
