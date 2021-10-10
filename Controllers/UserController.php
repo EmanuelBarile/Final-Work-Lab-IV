@@ -4,7 +4,7 @@
     use DAO\UserDAO as UserDAO;
     use Models\User as User;
   
-    class LoginController
+    class UserController
     {
         private $UserDAO;
   
@@ -23,7 +23,7 @@
             require_once(VIEWS_PATH."profile-admin.php");
         }
         
-        public function validation($email, $contrasenia, $button)
+        public function login($email, $contrasenia, $button)
         {
             //die(var_dump($current_user));
             $usuarios_registrados =  ($this->UserDAO)->GetAll();
