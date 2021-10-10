@@ -7,7 +7,7 @@
           <div class="container">
                <h2 class="mb-4">Inicio de sesión</h2>
                <img src="UTN_logo.jpg" alt="logo_UTN" align="left">
-               <form action="<?php echo FRONT_ROOT ?>Login/validation" method="post" class="bg-light-alpha p-5">
+               <form action="<?php echo FRONT_ROOT ?>User/login" method="post" class="bg-light-alpha p-5">
                     <div class="row">                         
                          <div class="col-lg-4">
                               <div class="form-group">
