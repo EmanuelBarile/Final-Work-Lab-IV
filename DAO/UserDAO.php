@@ -39,16 +39,15 @@
 
             $jsonContent = json_encode($arrayToEncode, JSON_PRETTY_PRINT);
             
-            file_put_contents('../Data/Users.json', $jsonContent);
+            file_put_contents(ROOT.'Data/Users.json', $jsonContent);
         }
 
         private function RetrieveData()
         {
             $this->UserList = array();
-
-            if(file_exists('../Data/Users.json'))
+            if(file_exists(ROOT.'Data/Users.json'))
             {
-                $jsonContent = file_get_contents('../Data/Users.json');
+                $jsonContent = file_get_contents(ROOT.'Data/Users.json');
 
                 $arrayToDecode = ($jsonContent) ? json_decode($jsonContent, true) : array();
 

@@ -27,16 +27,20 @@
         {
             //die(var_dump($current_user));
             $usuarios_registrados =  ($this->UserDAO)->GetAll();
-            $valid_user = new User();
             for ($i = 0; $i <= sizeof($usuarios_registrados) - 1; $i++) {
-                if($usuarios_registrados[$i]->getEmail() == $email && $usuarios_registrados[$i]->getPassword() == $contrasenia)
+                if($usuarios_registrados[$i]->getEmail() == $email && $usuarios_registrados[$i]->getPassword() == $contrasenia){
+                    $valid_user = new User();
                     $valid_user = $usuarios_registrados[$i];
+                }
             }
             if(isset($valid_user)){
                 if($valid_user->getType() == "U")
                     $this->ShowStudentView();
-                if($valid_user->getType() == "A")
+                if($valid_user->getType() == "A"){
                     $this->ShowAdminView();
+                }
+            }else{
+                require_once(VIEWS_PATH."login.php");
             }
         }  
        
